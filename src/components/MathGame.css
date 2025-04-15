@@ -1,0 +1,95 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #e0eaff);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .math-game {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .question {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    background: #ffeb3b;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .answer-input {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .answer-input:focus {
+    border-color: #ff9800;
+    box-shadow: 0px 0px 10px rgba(255, 152, 0, 0.5);
+  }
+  
+  button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background: #45a049;
+  }
+  
+  .submit-btn {
+    background: #008cba;
+  }
+  
+  .submit-btn:hover {
+    background: #007bb5;
+  }
+  
+  .restart-btn {
+    background: #f44336;
+    margin-top: 10px;
+  }
+  
+  .restart-btn:hover {
+    background: #d32f2f;
+  }
+  
+  .back-btn {
+    background: #555;
+    margin-top: 10px;
+  }
+  
+  .back-btn:hover {
+    background: #444;
+  }
+  
+  .score, .round {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

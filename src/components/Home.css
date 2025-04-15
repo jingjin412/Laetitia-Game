@@ -1,0 +1,36 @@
+.home {
+  text-align: center;
+  padding: 50px;
+  background-image: url("background.jpg"); /* 替換成你的圖片路徑 */
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .game-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    max-width: 80px;
+    margin: 10px auto;
+  }
+  
+  .game-buttons button {
+    padding: 30px;
+    font-size: 28px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffc4e1;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  
+  .game-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
