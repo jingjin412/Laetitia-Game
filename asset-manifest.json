@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Laetitia-Game/static/css/main.4b966bc6.css",
-    "main.js": "/Laetitia-Game/static/js/main.16e5054e.js",
+    "main.js": "/Laetitia-Game/static/js/main.7035e741.js",
     "static/js/453.e036e8b5.chunk.js": "/Laetitia-Game/static/js/453.e036e8b5.chunk.js",
     "static/media/background.jpg": "/Laetitia-Game/static/media/background.64f5d3a0d1de1972a02a.jpg",
     "index.html": "/Laetitia-Game/index.html",
     "main.4b966bc6.css.map": "/Laetitia-Game/static/css/main.4b966bc6.css.map",
-    "main.16e5054e.js.map": "/Laetitia-Game/static/js/main.16e5054e.js.map",
+    "main.7035e741.js.map": "/Laetitia-Game/static/js/main.7035e741.js.map",
     "453.e036e8b5.chunk.js.map": "/Laetitia-Game/static/js/453.e036e8b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b966bc6.css",
-    "static/js/main.16e5054e.js"
+    "static/js/main.7035e741.js"
   ]
 }
