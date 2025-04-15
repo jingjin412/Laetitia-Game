@@ -93,3 +93,26 @@ body {
     margin-top: 10px;
   }
   
+  .easy-btn {
+  background-color: #4CAF50; /* 綠色 */
+}
+
+.normal-btn {
+  background-color: #FF9800; /* 橘色 */
+}
+
+.hard-btn {
+  background-color: #F44336; /* 紅色 */
+}
+
+.easy-btn:hover {
+  background-color: #45a049;
+}
+
+.normal-btn:hover {
+  background-color: #fb8c00;
+}
+
+.hard-btn:hover {
+  background-color: #e53935;
+}
