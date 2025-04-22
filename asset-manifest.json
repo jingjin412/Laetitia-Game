@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Laetitia-Game/static/css/main.a49db496.css",
-    "main.js": "/Laetitia-Game/static/js/main.5a3bf388.js",
+    "main.css": "/Laetitia-Game/static/css/main.6bceb43e.css",
+    "main.js": "/Laetitia-Game/static/js/main.04f807d8.js",
     "static/js/453.e036e8b5.chunk.js": "/Laetitia-Game/static/js/453.e036e8b5.chunk.js",
     "static/media/background.jpg": "/Laetitia-Game/static/media/background.64f5d3a0d1de1972a02a.jpg",
     "index.html": "/Laetitia-Game/index.html",
-    "main.a49db496.css.map": "/Laetitia-Game/static/css/main.a49db496.css.map",
-    "main.5a3bf388.js.map": "/Laetitia-Game/static/js/main.5a3bf388.js.map",
+    "main.6bceb43e.css.map": "/Laetitia-Game/static/css/main.6bceb43e.css.map",
+    "main.04f807d8.js.map": "/Laetitia-Game/static/js/main.04f807d8.js.map",
     "453.e036e8b5.chunk.js.map": "/Laetitia-Game/static/js/453.e036e8b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a49db496.css",
-    "static/js/main.5a3bf388.js"
+    "static/css/main.6bceb43e.css",
+    "static/js/main.04f807d8.js"
   ]
 }
