@@ -28,6 +28,12 @@ const Gomoku = ({ setGame }) => {
 
   return (
     <div className="five">
+            {winner && (
+        <div className="winner-overlay">
+          🎉 勝者：{winner} 🎉
+        </div>
+      )}
+
       <div className="game">
         <h1>⚫⚪ 五子棋</h1>
         <div className="board gomoku">
