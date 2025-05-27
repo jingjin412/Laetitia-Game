@@ -27,28 +27,30 @@ const Gomoku = ({ setGame }) => {
   };
 
   return (
-    <div className="game">
-      <h1>⚫⚪ 五子棋</h1>
-      <div className="board gomoku">
-        {board.map((row, rowIndex) => (
-          <div key={rowIndex} className="board-row">
-            {row.map((cell, colIndex) => (
-              <button
-                key={colIndex}
-                className="cell"
-                onClick={() => handleClick(rowIndex, colIndex)}
-              >
-                {cell}
-              </button>
-            ))}
-          </div>
-        ))}
+    <div className="five">
+      <div className="game">
+        <h1>⚫⚪ 五子棋</h1>
+        <div className="board gomoku">
+          {board.map((row, rowIndex) => (
+            <div key={rowIndex} className="board-row">
+              {row.map((cell, colIndex) => (
+                <button
+                  key={colIndex}
+                  className="cell"
+                  onClick={() => handleClick(rowIndex, colIndex)}
+                >
+                  {cell}
+                </button>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div className="status">
+          {winner ? `勝者：${winner}` : `輪到：${isBlackNext ? "⚫" : "⚪"}`}
+        </div>
+        <button className="reset-btn" onClick={resetGame}>重新開始</button>
+        <button className="back-btn" onClick={() => setGame(null)}>返回主頁</button>
       </div>
-      <div className="status">
-        {winner ? `勝者：${winner}` : `輪到：${isBlackNext ? "⚫" : "⚪"}`}
-      </div>
-      <button className="reset-btn" onClick={resetGame}>重新開始</button>
-      <button className="back-btn" onClick={() => setGame(null)}>返回主頁</button>
     </div>
   );
 };

@@ -1,14 +1,28 @@
 /* 基本樣式 */
-body {
+/* body {
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #f9f9f9, #e0eaff);
+    background: linear-gradient(135deg, #f9f9f9, #e0eaff); 
+    background: url("typing_bg.jpg") no-repeat center center fixed;
     text-align: center;
     padding: 20px;
+  } */
+
+  .typing{
+    text-align: center;
+    padding: 0px;
+    background-image: url("typing_bg.jpg"); /* 替換成你的圖片路徑 */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .game {
     background: white;
-    padding: 20px;
+    padding: 60px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -16,15 +30,15 @@ body {
   }
   
   h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 20px;
   }
   
   .word-display {
     font-size: 32px;
     font-weight: bold;
     color: #333;
-    background: #ffeb3b;
+    /* background: #ffeb3b; */
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
@@ -67,19 +81,30 @@ body {
   /* 開始 & 返回按鈕 */
   .start-btn {
     background: #008cba;
+    padding: 12px 20px;
+    font-size: 18px;
+    margin-right: 5px;
   }
   
   .start-btn:hover {
     background: #007bb5;
+    padding: 12px 20px;
+    font-size: 18px;
+    margin-right: 5px;
   }
   
   .back-btn {
     background: #f44336;
-    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    margin-right: 5px;
   }
   
   .back-btn:hover {
     background: #d32f2f;
+    padding: 12px 20px;
+    font-size: 18px;
+    margin-right: 5px;
   }
   
   /* 計時器 & 分數 */

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Game.css";
+import "./TicTacToe.css";
 
 const TicTacToe = ({ setGame }) => {
   const [board, setBoard] = useState(Array(9).fill(null));

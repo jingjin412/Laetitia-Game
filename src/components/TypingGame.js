@@ -107,33 +107,35 @@ const TypingGame = ({ setGame }) => {
   };
 
   return (
-    <div className="game">
-      <h1>⌨️ 打字遊戲</h1>
+    <div className="typing">
+      <div className="game">
+        <h1>⌨️ 打字遊戲</h1>
 
-      {isPlaying ? (
-        <>
-          <p className="word-display">{currentWord}</p>
-          <input
-            type="text"
-            className="word-input"
-            value={inputValue}
-            onChange={handleInputChange}
-            autoFocus
-          />
-          <p className="score">分數：{score}</p>
-          <p className="timer">剩餘時間：{timeLeft} 秒</p>
-        </>
-      ) : gameOver ? (
-        <>
-          <h2>🎉 遊戲結束！</h2>
-          <p>你總共打出了 <strong>{score}</strong> 個單字！</p>
-          <button className="start-btn" onClick={startGame}>再玩一次</button>
-        </>
-      ) : (
-        <button className="start-btn" onClick={startGame}>開始遊戲</button>
-      )}
+        {isPlaying ? (
+          <>
+            <p className="word-display">{currentWord}</p>
+            <input
+              type="text"
+              className="word-input"
+              value={inputValue}
+              onChange={handleInputChange}
+              autoFocus
+            />
+            <p className="score">分數：{score}</p>
+            <p className="timer">剩餘時間：{timeLeft} 秒</p>
+          </>
+        ) : gameOver ? (
+          <>
+            <h2>🎉 遊戲結束！</h2>
+            <p>你總共打出了 <strong>{score}</strong> 個單字！</p>
+            <button className="start-btn" onClick={startGame}>再玩一次</button>
+          </>
+        ) : (
+          <button className="start-btn" onClick={startGame}>開始遊戲</button>
+        )}
 
-      <button className="back-btn" onClick={() => setGame(null)}>返回主頁</button>
+        <button className="back-btn" onClick={() => setGame(null)}>返回主頁</button>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,27 @@
-.board.gomoku {
+.five{
+  text-align: center;
+  padding: 0px;
+  background-image: url("five_bg.jpg"); /* 替換成你的圖片路徑 */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .game {
+  background-color: white;
+  padding: 35px 80px;   /* 上下 30px，左右 40px 內距 */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: fit-content;   /* 寬度自適應內容 */
+  margin: 0 auto;       /* 水平置中 */
+}
+
+
+  .board.gomoku {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,8 +32,8 @@
   }
   
   .cell {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     font-size: 20px;
     text-align: center;
     vertical-align: middle;
