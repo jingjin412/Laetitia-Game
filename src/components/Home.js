@@ -10,6 +10,7 @@ const Home = ({ setGame }) => {
         <button onClick={() => setGame("whack-a-mole")}>🐹 打地鼠</button>
         <button onClick={() => setGame("typing-game")}>💖 打字遊戲</button>
         <button onClick={() => setGame("math-game")}>🧮 算數遊戲</button>
+        <button onClick={() => setGame("five-game")}>🧮 五子棋</button>
       </div>
     </div>
   );

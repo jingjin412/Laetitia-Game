@@ -1,0 +1,25 @@
+.board.gomoku {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    border: 1px solid #aaa;
+    background-color: #f5f0d0;
+    padding: 0;
+    margin: 0;
+    border-radius: 0; /* 👈 去除圓角，方形格子 */
+    box-sizing: border-box;
+  }
+  

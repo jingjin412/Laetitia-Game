@@ -5,6 +5,7 @@ import GuessNumber from "./components/GuessNumber";
 import WhackAMole from "./components/WhackAMole";
 import TypingGame from "./components/TypingGame";
 import MathGame from "./components/MathGame";
+import Five from "./components/five";
 
 function App() {
   const [currentGame, setGame] = useState(null);
@@ -16,6 +17,7 @@ function App() {
       {currentGame === "whack-a-mole" && <WhackAMole setGame={setGame} />}
       {currentGame === "typing-game" && <TypingGame setGame={setGame} />}
       {currentGame === "math-game" && <MathGame setGame={setGame} />}
+      {currentGame === "five-game" && <Five setGame={setGame} />}
       {currentGame === null && <Home setGame={setGame} />}
     </div>
   );
