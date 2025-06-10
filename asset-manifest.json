@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/Laetitia-Game/static/css/main.6bceb43e.css",
-    "main.js": "/Laetitia-Game/static/js/main.04f807d8.js",
+    "main.css": "/Laetitia-Game/static/css/main.488f3b60.css",
+    "main.js": "/Laetitia-Game/static/js/main.47a705ce.js",
     "static/js/453.e036e8b5.chunk.js": "/Laetitia-Game/static/js/453.e036e8b5.chunk.js",
-    "static/media/background.jpg": "/Laetitia-Game/static/media/background.64f5d3a0d1de1972a02a.jpg",
+    "static/media/five_bg.jpg": "/Laetitia-Game/static/media/five_bg.2653aaa08108ba6cb5a6.jpg",
+    "static/media/OOXX_bg.jpg": "/Laetitia-Game/static/media/OOXX_bg.54c5da880360234f3b33.jpg",
+    "static/media/typing_bg.jpg": "/Laetitia-Game/static/media/typing_bg.9bbf08ce2e3e8f2d7c3d.jpg",
+    "static/media/whack_bg.jpg": "/Laetitia-Game/static/media/whack_bg.c4d0044ffb6dbef66821.jpg",
+    "static/media/background2.jpg": "/Laetitia-Game/static/media/background2.7a7da3a6a149a9b8ab72.jpg",
     "index.html": "/Laetitia-Game/index.html",
-    "main.6bceb43e.css.map": "/Laetitia-Game/static/css/main.6bceb43e.css.map",
-    "main.04f807d8.js.map": "/Laetitia-Game/static/js/main.04f807d8.js.map",
+    "main.488f3b60.css.map": "/Laetitia-Game/static/css/main.488f3b60.css.map",
+    "main.47a705ce.js.map": "/Laetitia-Game/static/js/main.47a705ce.js.map",
     "453.e036e8b5.chunk.js.map": "/Laetitia-Game/static/js/453.e036e8b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bceb43e.css",
-    "static/js/main.04f807d8.js"
+    "static/css/main.488f3b60.css",
+    "static/js/main.47a705ce.js"
   ]
 }
