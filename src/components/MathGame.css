@@ -1,10 +1,23 @@
-body {
+/* body {
     font-family: "Poppins", sans-serif;
     background: linear-gradient(135deg, #f9f9f9, #e0eaff);
     text-align: center;
     padding: 20px;
-  }
+  } */
   
+  .math {
+    text-align: center;
+    padding: 0px;
+    background-image: url("OOXX_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   .math-game {
     background: white;
     padding: 20px;

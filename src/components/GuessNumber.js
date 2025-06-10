@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Game.css";
+import "./GuessNumber.css";
 
 const GuessNumber = ({ setGame }) => {
   const [targetNumber] = useState(Math.floor(Math.random() * 100) + 1);
@@ -20,6 +20,7 @@ const GuessNumber = ({ setGame }) => {
   };
 
   return (
+    <div className="OOXX">
     <div className="game">
       <h1>🔢 猜數字遊戲</h1>
       <p>猜一個 1 到 100 的數字</p>
@@ -27,6 +28,7 @@ const GuessNumber = ({ setGame }) => {
       <button onClick={checkGuess}>猜！</button>
       <p>{message}</p>
       <button className="back-btn" onClick={() => setGame(null)}>返回主頁</button>
+    </div>
     </div>
   );
 };

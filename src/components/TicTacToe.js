@@ -7,7 +7,7 @@ const TicTacToe = ({ setGame }) => {
   const winner = calculateWinner(board);
 
   const handleClick = (index) => {
-    if (board[index] || winner) return;
+    if (board[index] || winner || isDraw(board)) return;
     const newBoard = board.slice();
     newBoard[index] = isXNext ? "O" : "X";
     setBoard(newBoard);
@@ -20,20 +20,37 @@ const TicTacToe = ({ setGame }) => {
   };
 
   return (
-    <div className="game">
-      <h1>⭕❌ 井字棋</h1>
-      <div className="board">
-        {board.map((value, index) => (
-          <button key={index} className="cell" onClick={() => handleClick(index)}>
-            {value}
-          </button>
-        ))}
+    <div className="OOXX">
+      {(winner || isDraw(board)) && (
+        <div className="winner-overlay" onClick={resetGame}>
+          {winner ? `🎉 勝者：${winner} 🎉` : "🤝 平手！"}
+          <div style={{ fontSize: '18px', marginTop: '10px' }}>點擊畫面繼續</div>
+        </div>
+      )}
+
+      <div className="game">
+        <h1>⭕圈圈叉叉❌</h1>
+        <div className="board">
+          {board.map((value, index) => (
+            <button
+              key={index}
+              className="OOXXcell"
+              onClick={() => handleClick(index)}
+            >
+              {value}
+            </button>
+          ))}
+        </div>
+        <div className="status">
+          {winner
+            ? `勝者：${winner}`
+            : isDraw(board)
+            ? "平手"
+            : `輪到：${isXNext ? "O" : "X"}`}
+        </div>
+        <button className="reset-btn" onClick={resetGame}>重新開始</button>
+        <button className="back-btn" onClick={() => setGame(null)}>返回主頁</button>
       </div>
-      <div className="status">
-        {winner ? `勝者：${winner}` : `輪到：${isXNext ? "O" : "X"}`}
-      </div>
-      <button className="reset-btn" onClick={resetGame}>重新開始</button>
-      <button className="back-btn" onClick={() => setGame(null)}>返回主頁</button>
     </div>
   );
 };
@@ -50,6 +67,10 @@ const calculateWinner = (squares) => {
     }
   }
   return null;
+};
+
+const isDraw = (squares) => {
+  return squares.every(cell => cell !== null) && !calculateWinner(squares);
 };
 
 export default TicTacToe;

@@ -107,6 +107,7 @@ const MathGame = ({ setGame }) => {
 
   if (!level) {
     return (
+      <div className="math">
       <div className="math-game">
         <h1>🧮 數學小遊戲</h1>
         <p>請選擇難度：</p>
@@ -121,10 +122,12 @@ const MathGame = ({ setGame }) => {
         ))}
         <button className="back-btn" onClick={() => setGame(null)}>返回主頁</button>
       </div>
+      </div>
     );
   }
 
   return (
+    <div className="math">
     <div className="math-game">
       <h1>🧮 {levels[level]}等級</h1>
       {!gameOver ? (
@@ -154,6 +157,7 @@ const MathGame = ({ setGame }) => {
         </>
       )}
       <button className="back-btn" onClick={() => setGame(null)}>返回主頁</button>
+    </div>
     </div>
   );
 };

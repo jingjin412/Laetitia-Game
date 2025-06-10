@@ -27,7 +27,7 @@ const WhackAMole = ({ setGame }) => {
           {Array(9).fill(0).map((_, index) => (
             <button
               key={index}
-              className={`cell ${index === moleIndex ? "mole" : ""}`}
+              className={`Wackcell ${index === moleIndex ? "mole" : ""}`}
               onClick={() => hitMole(index)}
             >
               {index === moleIndex ? "🐹" : ""}

@@ -2,20 +2,20 @@
     text-align: center;
     font-family: Arial, sans-serif;
   }
-
-  .whack-a-mole {
-    text-align: center;
-    padding: 0px;
-    background-image: url("whack_bg.jpg"); /* 替換成你的圖片路徑 */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   
+    .OOXX {
+        text-align: center;
+        padding: 0px;
+        background-image: url("OOXX_bg.jpg"); /* 替換成你的圖片路徑 */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
   .board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -24,7 +24,7 @@
     width: 310px;
   }
   
-  .Wackcell {
+  .cell {
     width: 100px;
     height: 100px;
     font-size: 36px;
@@ -36,7 +36,7 @@
     transition: background 0.3s;
   }
   
-  .Wackcell:hover {
+  .cell:hover {
     background-color: #f0f0f0;
   }
   

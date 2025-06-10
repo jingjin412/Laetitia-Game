@@ -2,6 +2,19 @@
     text-align: center;
     font-family: Arial, sans-serif;
   }
+
+  .OOXX{
+    text-align: center;
+    padding: 0px;
+    background-image: url("OOXX_bg.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   .board {
     display: grid;
@@ -12,7 +25,7 @@
     color: #333;
     }
 
-    .cell {
+    .OOXXcell {
     width: 100px;               /* 原本是 100px */
     height: 100px;              /* 原本是 100px */
     font-size: 48px;            /* 原本是 36px */
@@ -26,7 +39,7 @@
     transition: background 0.3s;
     }
 
-    .cell:hover {
+    .OOXXcell:hover {
     background-color: #000000;
     color: white; /* 滑過時也可改變文字顏色，視需求調整 */
     }
@@ -39,6 +52,36 @@
   
   .reset-btn {
     background-color: #007bff;
+    /* color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer; */
+    margin-top: 10px;
+    /* border-radius: 5px; */
+  }
+  
+  .reset-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* .back-btn {
+    background: #555;
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .back-btn:hover {
+    background: #444;
+  } */
+  
+/* .back-btn {
+    background-color: #007bff;
     color: white;
     font-size: 18px;
     padding: 10px 20px;
@@ -48,7 +91,35 @@
     border-radius: 5px;
   }
   
-  .reset-btn:hover {
+  .back-btn:hover {
     background-color: #0056b3;
+  } */
+
+  .winner-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 4px solid #333;
+  border-radius: 20px;
+  padding: 40px 60px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  z-index: 9999;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: pop-in 0.3s ease-out;
+}
+
+@keyframes pop-in {
+  from {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
   }
-  
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
